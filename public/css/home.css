@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(6, 11, 22);
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    color:white;
+    border-bottom: 1px white solid;
+    transition: all 0.5s ease-in;
+    
+    
+    
+}
+header #user{
+    background-color: orange;
+    padding: 10px 15px;
+    border-radius: 24px;
+}
+header #user span{
+    background-color: brown;
+    padding: 10px 15px;
+    border-radius: 50px;
+    position: relative;
+    left: 15px;
+}
+header .sub{
+    position: absolute;
+    background-color: rgb(13, 47, 110);
+    left: 1100px;
+    top :60px;
+    padding: 10px 15px;
+    border-radius: 24px;
+    width: 200px;
+    height: 120px;
+    visibility: hidden;
+    z-index: 1000;
+    
+}
+header .sub .box{
+    
+    padding: 10px 10px;
+    width: 200px;
+    height: 100px;
+    margin-left: -10px;
+}
+header li:hover .sub{
+    visibility: visible;
+}
+header .sub::after{
+    content: '';
+    width: 15px;
+    height:15px;
+    background-color: rgb(13, 47, 110);
+    position: absolute;
+    z-index: 100;
+    top: -15px;
+    left: 180px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+header .sub a{
+    background-color: antiquewhite;
+    padding: 5px 5px;
+    position: relative;
+    top :20px;
+    left: 10px;
+    border-radius: 12px;
+}
+header .sub #logout{
+    background-color: rgb(173, 13, 13);
+}
+header .sub #logout:hover {
+    background-color:black;
+}
+header .sub #logout:active {
+    box-shadow: 0px 0px 10px black;
+}
+header .sub #dash{
+    background-color: rgb(13, 64, 173);
+}
+header .sub #dash:hover {
+    background-color:black;
+}
+header .sub #dash:active {
+    box-shadow: 0px 0px 10px black;
+}
+.header1{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    z-index: 1000;
+}
+.header1 a {
+    color: black;
+
+}
+header li{
+    list-style: none;
+}
+header a{
+    text-decoration: none;
+    color:white;
+    
+}
+header h2{
+    flex-basis: 40%;
+    font-size: 25px;
+}
+.slides .imgs{
+    position: absolute;
+    transition: all 2s ease;
+    
+
+}
+
+
+
+.slide img{
+    width: 550px;
+    height: 550px;
+    animation: anim1 30s linear infinite; 
+    border-radius: 180%;
+    
+    
+  
+    
+}
+.slides .box{
+    width: 450px;
+    height: 450px;
+    background-color: rgb(240, 240, 240);
+    filter: blur(100px);
+    border-radius: 100%;
+    position: relative;
+    top: 350px;
+    left: 480px;
+    z-index: -1;
+}
+@keyframes anim1 {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    50% {
+        transform: rotate(180deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.slides .img .p1 {
+    left: 450px;
+    top: 500px;
+    width: 200px;
+    height: 200px;
+    
+
+}
+
+
+.slides .img .p2 {
+    left: 1225px;
+    top: 300px;
+    width: 100px;
+    height: 100px;
+   
+   
+   
+}
+.slides .img .p3 {
+    left: 680px;
+    top: 200px;
+    width: 10px;
+    height: 10px;
+    
+   
+}
+.slides .img .p4{
+ 
+        left: 15px;
+        top: 300px;
+        width: 100px;
+        height: 100px;
+}
+.slides .img .curr {
+    left: 300px;
+    top: 430px;
+    width: 800px;
+    height: 800px;
+    transition: all 2s ease;
+   
+   
+
+
+}
+.slides .dis1{
+    
+    position: absolute;
+    opacity: 0;
+    
+}
+.slides .dis1{
+    opacity: 1;
+    left: 670px;
+    top: 150px;
+    z-index: 10;
+    color: aliceblue;
+    
+}
+.slides .dis1 h2{
+    margin-top: -70px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.slide .dis1 h1{
+    font-size: 80px;
+    margin-left: -90px;
+    margin-top: 20px;
+    font-family: monospace;
+
+}
+.slide .dis1 p{
+    font-size: 12px;
+    
+    width: 600px;
+    text-align: center;
+    margin-left: -280px;
+    margin-top: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+}
+.slides .btn{
+    text-decoration: none;
+    color:black;
+    background-color: aliceblue;
+    position: relative;
+    top:50px;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.slides .btn:hover{
+    background-color: black;
+    color: aliceblue;
+}
+.slides .btn:active{
+    box-shadow: 0px 0px 10px black;
+}
+.slides .dis1{
+    
+    width: 500px;
+    height: 200px;
+    opacity: 0;
+    position: absolute;
+    
+    
+    
+}
+.slides .curr1{
+    opacity: 1;
+    transition: all 2s ease-in;
+}
+.planets{
+    height: 500px;
+    transition: all 0.5s ease-in;
+    position: relative;
+    top:1100px;
+}
+.planets .planet1{
+    position: absolute;
+    transition: all 0.5s ease-in;
+    width: 900px;
+    left:250px;
+    top: -280px;
+}
+.curr2 .planet1{
+    width: 450px;
+    left: 750px;
+    top: 20px;
+    
+    animation: animc 20s linear infinite;
+    animation-delay: 1s;
+    
+    
+}
+@keyframes animc{
+    0%{
+        transform: rotate(0deg);
+        
+
+    }
+    100%{
+        transform: rotate(360deg);
+        
+
+    }
+}
+
+.planets .dis{
+    opacity: 0;
+}
+.curr2 .dis {
+    opacity: 1;
+    width: 650px;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    line-height: 1.7em;
+    color: aliceblue;
+    font-family: monospace;
+    
+}
+.curr2 .dis h2{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 80px 15px;
+}
+
+.planet2{
+    position: relative;
+    top :1300px;
+    display: flex;
+    align-items:center ;
+    
+}
+.planet2 .dis{
+    color: aliceblue;
+    font-family: monospace;
+    position: relative;
+    top:-50px;
+    left: 50px;
+    width: 650px;
+    margin: 10px 15px;
+    line-height: 1.7em;
+    
+}
+.explore{
+    position: relative;
+    top: 220vh;
+    width: 100%;
+    height: 100vh;
+    background:url(/images/Earth-from-space-1-64e9a7c.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+}
+.explore .box{
+    position: absolute;
+    left: 250px;
+    top: 180px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 150px 250px;
+    border-radius: 24px;
+    box-shadow: 0px 0px 10px black;
+}
+.explore .box h1{
+    color: #fff;
+    font-family: monospace;
+    font-size: 50px;
+    position: relative;
+    top:-80px;
+    left: 10px;
+
+
+}
+.explore a{
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 24px;
+    margin-left: 150px;
+}
+.explore a:hover{
+    background-color: black;
+    color: white;
+}
+.explore .a:active{
+    box-shadow: 0px 0px 10px black;
+}

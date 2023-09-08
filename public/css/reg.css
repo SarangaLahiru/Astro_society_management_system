@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../images/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg);
+    background-size: cover;
+}
+.box{
+    background-color: rgba(249, 252, 253, 0.623);
+    width: 400px;
+    margin: auto;
+    padding: 10px 15px;
+    position: relative;
+    top: 70px;
+    border-radius: 24px;
+    height: 500px;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+}
+.box form{
+    position: relative;
+    left: 50px;
+    top: 80px;
+}
+.box h2{
+    position: relative;
+    top: 50px;
+    left: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.box form .frm-g input{
+    padding: 10px 15px;
+    margin: 10px 15px;
+    border-radius: 12px;
+    width: 250px;
+    border: none;
+    border: 1px rgb(36, 35, 35) solid;
+    
+
+}
+.box form .frm-g input:focus{
+    outline-color: rgb(88, 119, 223);
+    box-shadow: 0px 0px 10px blue;
+}
+.box form .frm-g input[type="submit"]{
+    background-color: rgb(45, 76, 214);
+    color: aliceblue;
+    border: none;
+    border-radius: 6px;
+    width: 80px;
+    cursor: pointer;
+}
+.box form span p{
+    color: red;
+    font-size: 15px;
+    margin-top: -8px;
+    margin-left: 20px;
+
+}
+
+.form-error {
+
+    border: 1px rgb(196, 17, 17) solid;
+    box-shadow: 0px 0px 10px red;
+    
+    
+}
+.box .box1{
+    background-color: rgb(53, 101, 235);
+    width: 420px;
+    height: 7px;
+    position: absolute;
+    left: -60px;
+    top :-125px;
+    border-radius: 24px;
+    animation: anim 1.5s linear infinite;
+
+}
+
+@keyframes anim{
+    0%{
+        left: -800px;
+
+    }
+    100%{
+        left: 800px;
+
+    }
+    
+}
+form #a1{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.a2{
+    background-color: rgb(245, 45, 10);
+    position: fixed;
+    color: aliceblue;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+    top:100vh;
+    
+
+}
+.a4 {
+    background-color: green;
+    position: fixed;
+    color: aliceblue;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+    top: 100vh;
+
+
+}
+.a3{
+    animation: anim1 5s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes anim1{
+    0%{
+        top: 100vh;
+
+    }
+    
+    50% {
+        top: 95vh;
+    
+    }
+    100%{
+        top: 100vh;
+
+    }
+}
